@@ -9,7 +9,7 @@ from slugify import slugify
 def _tmdb_list_by_page(page) -> list:
     """ TMDB API v4 uses pagination for lists. Each page return 20 movies. This function gets movies per page """
 
-    resp = get(tmdb_url, headers=tmdb_headers, data={'page': page})
+    resp = get(tmdb_url, headers=tmdb_headers, params={'page': page})
     if resp.ok:
         return resp.json()['results']
     else:
