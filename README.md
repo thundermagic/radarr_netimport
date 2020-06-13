@@ -18,7 +18,7 @@ Script variables are passed as environment variables. Supported variables are;
 
 # Docker Image
 Docker image is available at: https://hub.docker.com/r/thundermagic/radarr_netimport.  
-Docker image is multi arch. Supported architectures are `arm` and `amd64`.  
+Docker image is multi arch. Supported architectures are `arm`, `arm64` and `amd64`.  
 Docker manifest is used for multi arch awareness. So you just need to pull the image regardless of the underlying 
 platform and the correct image will be pulled.  
 
